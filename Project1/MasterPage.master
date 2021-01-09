@@ -1,0 +1,79 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Trust</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <div id="header">
+		<div>
+			<%--<div class="logo">--%>
+			<div>
+				<a href="#">Online Exam Management System</a>
+			</div>
+			<ul id="navigation">
+				<li >
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="RegistrationForm.aspx">Registration</a>
+				</li>
+				<li>
+					<a href="Center.aspx">Center</a>
+				</li>
+				<li>
+					<a href="Department.aspx">Department</a>
+				</li>
+				<li>
+					<a href="Course.aspx">Course</a>
+				</li>
+				<%--<li>
+					<a href="AttendanceList.aspx">Attendance</a>
+				</li>--%>
+				<%--<li>
+					<a href="AdminCRM.aspx">CRM Student</a>
+				</li>--%>
+				<%--<li>
+					<a href="StudentFollowUpList.aspx">Student Follow Up</a>
+				</li>--%>
+				<li>
+					<a href="Exam.aspx">Question</a>
+				</li>
+				<%--<li>
+					<a href="adminRegistration.aspx">Admin Reg</a>
+				</li>--%>
+				
+			    <li >
+					<a href="login.aspx">Logout</a>
+				</li>	
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+	<div id="tagline" class="clearfix">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+       </div>
+        </div>
+        
+        
+        <div id="footer">
+		<div class="clearfix">
+			<div id="connect">
+				<a href="#" target="_blank" class="facebook"></a><a href="#" target="_blank" ></a>
+			</div>
+			<p>
+				©All Rights Reserved.
+			</p>
+		</div>
+	</div>
+    </div>
+    
+    </form>
+</body>
+</html>

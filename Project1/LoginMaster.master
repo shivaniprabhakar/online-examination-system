@@ -1,0 +1,57 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LoginMaster.master.cs" Inherits="LoginMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Trust</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <div id="header">
+		<div>
+			<%--<div class="logo">--%>
+			<div>
+				<a href="#">Online Exam Management System</a>
+			</div>
+			<ul id="navigation">
+				<li class="active">
+					<a href="frmAdminLogin.aspx">Admin</a>
+				</li>
+				<%--<li>
+					<a href="LoginAdmin.aspx">Center Incharges</a>
+				</li>--%>
+				<li>
+					<a href="Login.aspx">Examination</a>
+				</li>
+				<%--<li>
+					<a href="StudentFollowUp.aspx">Student Follow Up</a>
+				</li>--%>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+	<div id="tagline" class="clearfix">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+       </div>
+        </div>
+        
+        
+        <div id="footer">
+		<div class="clearfix">
+			<div id="connect">
+				<a href="#" target="_blank" class="facebook"></a><a href="#" target="_blank" ></a>
+			</div>
+			<p>
+				©All Rights Reserved.
+			</p>
+		</div>
+	</div>
+    </div>
+    
+    </form>
+</body>
+</html>
